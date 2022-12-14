@@ -1,0 +1,286 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #323232;
+  font-weight: 400;
+	line-height: 1;
+  margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #323232;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #1b1a1a;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+h1, h2 {
+  font-family: orpheuspro, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 65px;
+  line-height: 110%;
+}
+
+h3 {
+  font-family: orpheuspro, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.circle-image {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* Navbar Styles */
+
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  padding: 20px 50px;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.0);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 350px;
+}
+
+.nav__navigation {
+  display: flex;
+  column-gap: 30px;
+  font-weight: 300;
+}
+
+.nav__navigation a:hover {
+  font-weight: 400;
+}
+
+.nav__ssnn {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav__ssnn--icon {
+  width: 20px;
+}
+
+.nav__cart {
+  display: flex;
+  gap: 5px;
+}
+
+.nav__cart img {
+  width: 20px;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.nav__cart p {
+  text-decoration: none;
+}
+
+.nav .button {
+  color: white;
+}
+
+/* Header Styles */
+.header--index {
+  background-image: url("./assets/index-header.jpg");
+  padding: 30vh 60px;
+}
+
+.header--index h1 {
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.header--index p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1.2px;
+  width: 50%;
+}
+
+/* Main */
+
+/* Servicios */
+
+.servicios {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  padding : 150px 100px;
+}
+
+.servicios__items {
+  width: 100%;
+  margin-top : 100px;
+  display : flex;
+  gap: 80px;
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.servicio img{
+  width: 100%;
+}
+
+.servicio h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.servicio__button {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+/* Opinions */
+.opinions {
+  background-image: url("./assets/comments-background.jpg");
+  background-position: center center;
+  text-align: center;
+}
+
+.opinions--background-opacity {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  padding: 150px 15%;
+  z-index: 0;
+}
+
+.opinions__text {
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.opinions__author {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.angle {
+  width: 40px;
+  aspect-ratio: 1;
+  position: absolute;
+  top: 50%;
+}
+
+.angle--left {
+  left: 50px;
+}
+
+.angle--right {
+  right: 50px;
+}
+
+/* About Us */
+.about {
+  display: flex;
+  gap: 80px;
+  width: 80%;
+  padding-left: 10%;
+  margin: 150px 0;
+  place-items: center;
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__item h3 {
+  font-size: 38px;
+}
+
+.about__item img {
+  width: 70%;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  padding: 50px 5%;
+  background-color: #1b1a1a;
+  color: white;
+  justify-content: space-around;
+}
+
+.footer__identity {
+  width: 250px;
+}
+
+.footer__identity img{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.footer__identity p {
+  font-size: 16px;
+}
+
+.footer__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer__navigation li a{
+  color: white;
+}
+
+.footer__ssnn {
+  display: flex;
+  gap: 20px;
+  justify-self: flex-end;
+}
+
+.footer__ssnn img {
+  width: 25px;
+  filter: brightness(0) invert(1);
+}
