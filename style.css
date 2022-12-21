@@ -80,12 +80,16 @@ a, a:visited {
   padding: 10px 16px;
   text-align: center;
   border-radius: 6px;
+  font-size: 16px;
 }
 
-h1, h2 {
+.h_base {
   font-family: orpheuspro, serif;
   font-weight: 400;
   font-style: normal;
+}
+
+h1, h2 {
   font-size: 42px;
   line-height: 110%;
 }
@@ -94,7 +98,11 @@ h3 {
   font-family: orpheuspro, serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 24px;
+}
+
+p {
+  font-size: 14px;
 }
 
 .circle-image {
@@ -106,6 +114,20 @@ h3 {
 
 .center-text {
   text-align: center;
+}
+
+.container {
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  text-align: center;
+}
+
+.important-text {
+  font-weight: 700;
+  font-size: 18px;
 }
 
 /* Navbar Styles */
@@ -245,19 +267,9 @@ header p {
 /* Main */
 
 /* Servicios */
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 50px;
-  padding: 40px 30px;
-}
-
 .servicios__items {
-  width: 100%;
-  margin-top : 100px;
-  display : flex;
+  display : grid;
+  grid-template-columns: 1fr;
   gap: 80px;
 }
 
@@ -265,49 +277,29 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%;
+  gap: 20px;
 }
 
 .servicio img{
-  width: 100%;
-}
-
-.servicio h3 {
-  margin-top: 25px;
-  margin-bottom: 15px;
-}
-
-.servicio__button {
-  font-size: 12px;
-  margin-top: 20px;
+  width: 70%;
 }
 
 /* Opinions */
 .opinions {
-  background-image: url("./assets/comments-background.jpg");
+  background: url("./assets/comments-background.jpg");
   background-position: center center;
-  text-align: center;
+  background-size: cover;
+  padding: 0;
 }
 
 .opinions--background-opacity {
-  background-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   position: relative;
-  padding: 150px 15%;
   z-index: 0;
 }
 
-.opinions__text {
-  margin-bottom: 50px;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.opinions__author {
-  font-weight: 700;
-  font-size: 18px;
-}
-
 .angle {
+  display: none;
   width: 40px;
   aspect-ratio: 1;
   position: absolute;
@@ -323,49 +315,33 @@ section {
 }
 
 /* About Us */
-.about {
-  display: flex;
-  gap: 80px;
-  width: 80%;
-  padding-left: 10%;
-  margin: 150px 0;
-  place-items: center;
-}
 
-.about__item {
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 25px;
 }
 
-.about__item h3 {
-  font-size: 38px;
-}
-
-.about__item img {
+.about img {
   width: 70%;
 }
 
 /* Footer */
 footer {
-  display: flex;
-  padding: 50px 5%;
   background-color: #1b1a1a;
   color: white;
-  justify-content: space-around;
 }
 
 .footer__identity {
-  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
 }
 
 .footer__identity img{
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.footer__identity p {
-  font-size: 16px;
+  width: 75%;
 }
 
 .footer__navigation {
