@@ -173,9 +173,11 @@
     <script>
       const hamburger = document.querySelector(".hamburger");
       const navMenu = document.querySelector(".navBar__menu");
+      const navBar = document.querySelector(".navBar");
       hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("transform_active");
-        navMenu.classList.toggle("navBar__menu--active")
+        navMenu.classList.toggle("navBar__menu--active");
+        navBar.classList.toggle("navBar--active")
       });
     </script>
   </body>
