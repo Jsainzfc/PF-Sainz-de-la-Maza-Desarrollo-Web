@@ -326,6 +326,47 @@ header p {
   width: 70%;
 }
 
+/* Tienda */
+.header--tienda {
+  background: url('./assets/background.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 40vh;
+}
+
+.header--tienda h1 {
+  text-align: center;
+}
+
+.tienda__categories {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 35px;
+  border-bottom: 1px solid black;
+}
+
+.tienda__products {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product h3{
+  font-weight: 500;
+}
+
+.product img {
+  width: 100%;
+}
+
 /* Footer */
 footer {
   background-color: #1b1a1a;
