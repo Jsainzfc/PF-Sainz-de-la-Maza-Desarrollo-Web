@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/iro3spj.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
@@ -169,6 +170,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       const hamburger = document.querySelector(".hamburger");
       const navMenu = document.querySelector(".navBar__menu");
@@ -178,6 +180,7 @@
         navMenu.classList.toggle("navBar__menu--active");
         navBar.classList.toggle("navBar--active")
       });
+      AOS.init();
     </script>
   </body>
 </html>
