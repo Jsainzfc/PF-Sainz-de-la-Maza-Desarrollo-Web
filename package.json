@@ -4,8 +4,10 @@
   "description": "Proyecto curso desarrollo web Coderhouse.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass --include-path scss src/scss/style.scss assets/css/style.css",
+    "watch": "nodemon -e scss -x \"npm run build\""
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jsainzfc/coderhouse.git"
