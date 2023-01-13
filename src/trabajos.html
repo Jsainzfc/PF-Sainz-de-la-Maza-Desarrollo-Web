@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yellow Cactus Studio - Tienda Gráfica</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Yellow Cactus Studio - Trabajos</title>
+    <link rel="stylesheet" href="../assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/iro3spj.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
@@ -26,9 +25,9 @@
 
       <div class="navBar__menu">
         <ul class="navBar__navigation">
-          <li><a href="/pages/soluciones.html">Soluciones</a></li>
-          <li><a href="/pages/trabajos.html">Trabajos</a></li>
-          <li><a href="/pages/tienda-grafica.html">Tienda Gráfica</a></li>
+          <li><a href="/soluciones.html">Soluciones</a></li>
+          <li><a href="/trabajos.html">Trabajos</a></li>
+          <li><a href="/tienda-grafica.html">Tienda Gráfica</a></li>
         </ul>
         
         <ul class="navBar__ssnn">
@@ -59,65 +58,24 @@
 
     </nav>
 
-    <header class="header--tienda">
-      <h1 class="h_base">Tienda gráfica</h1>
+    <header>
+      <h1 class="center-text">Trabajos</h1>
     </header>
 
     <main>
-
-      <section data-aos="fade-right" class="tienda container">
-        <aside class="tienda__categories">
-          <!-- TODO: añadir en el futuro con javascript un filtro por categoría -->
-          <a>Todas</a>
-          <a>Categoría 1</a>
-          <a>Categoría 2</a>
-          <a>Categoría 3</a>
-        </aside>
-        <div class="tienda__products">
-          <a>
-            <div class="product">
-              <img src="../assets/product-1.png" alt="imagen de producto">
-              <h3 class="h_base">Product Name</h3>
-              <p class="product__price">450.00€</p>
-            </div>
-          </a>  
-          <a>
-            <div class="product">
-              <img src="../assets/product-1.png" alt="imagen de producto">
-              <h3 class="h_base">Product Name</h3>
-              <p class="product__price">450.00€</p>
-            </div>
-          </a> 
-          <a>
-            <div class="product">
-              <img src="../assets/product-1.png" alt="imagen de producto">
-              <h3 class="h_base">Product Name</h3>
-              <p class="product__price">450.00€</p>
-            </div>
-          </a>  
-          <a>
-            <div class="product">
-              <img src="../assets/product-1.png" alt="imagen de producto">
-              <h3 class="h_base">Product Name</h3>
-              <p class="product__price">450.00€</p>
-            </div>
-          </a>
-          <a>
-            <div class="product">
-              <img src="../assets/product-1.png" alt="imagen de producto">
-              <h3 class="h_base">Product Name</h3>
-              <p class="product__price">450.00€</p>
-            </div>
-          </a>
-          <a>
-            <div class="product">
-              <img src="../assets/product-1.png" alt="imagen de producto">
-              <h3 class="h_base">Product Name</h3>
-              <p class="product__price">450.00€</p>
-            </div>
-          </a>
-        </div>
+      <section class="gallery">
+        <img src="../assets/gallery-1.jpg" alt="gallery image" >
+        <img src="../assets/gallery-2.png" alt="gallery image" >
+        <img src="../assets/gallery-3.jpg" alt="gallery image" >
+        <img src="../assets/gallery-4.png" alt="gallery image" >
+        <img src="../assets/gallery-5.png" alt="gallery image" >
+        <img src="../assets/gallery-6.png" alt="gallery image" >
+        <img src="../assets/gallery-7.png" alt="gallery image" >
+        <img src="../assets/gallery-8.png" alt="gallery image" >
+        <img src="../assets/gallery-9.png" alt="gallery image" >
+        <img src="../assets/gallery-10.png" alt="gallery image" >
       </section>
+
 
     </main>
 
@@ -146,7 +104,6 @@
       </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       const hamburger = document.querySelector(".hamburger");
       const navMenu = document.querySelector(".navBar__menu");
@@ -156,7 +113,6 @@
         navMenu.classList.toggle("navBar__menu--active");
         navBar.classList.toggle("navBar--active")
       });
-      AOS.init();
     </script>
   </body>
 </html>

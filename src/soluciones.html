@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yellow Cactus Studio</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
@@ -25,9 +25,9 @@
 
       <div class="navBar__menu">
         <ul class="navBar__navigation">
-          <li><a href="/pages/soluciones.html">Soluciones</a></li>
-          <li><a href="/pages/trabajos.html">Trabajos</a></li>
-          <li><a href="/pages/tienda-grafica.html">Tienda Gráfica</a></li>
+          <li><a href="/soluciones.html">Soluciones</a></li>
+          <li><a href="/trabajos.html">Trabajos</a></li>
+          <li><a href="/tienda-grafica.html">Tienda Gráfica</a></li>
         </ul>
         
         <ul class="navBar__ssnn">
@@ -58,73 +58,60 @@
 
     </nav>
 
-    <header>
-      <h1 class="center-text">Contáctanos</h1>
+    <header class="header--soluciones">
+      <h1 class="h_base">Nuestras soluciones para tu marca 360º</h1>
     </header>
 
     <main>
+      
+      <section class="soluciones">
 
-      <section class="contact">
-        <div class="informacion">
-          <h2>Yellow Cactus Studio</h2>
-          <a>email-account@gmail.com</a>
-          <p>+34 123 45 67 89</p>
-          <p>Madrid, España</p>
-          <ul class="informacion__ssnn">
-            <li>
-              <a>
-                <img src="../assets/instagram.png" alt="instagram-logo">
-              </a>
-            </li>
-            <li>
-              <a>
-                <img src="../assets/youtube.png" alt="youtube-logo">
-              </a>
-            </li>
-            <li>
-              <a>
-                <img src="../assets/linkedin.png" alt="linkedin-logo">
-              </a>
-            </li>
-          </ul>
-          <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12152.778879635654!2d-3.7374774186962645!3d40.40453693659151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42278658c44cc7%3A0x550bfb1fadccafaf!2sYellow%20Cactus%20srl%20%7C%20Estudio%20Creativo!5e0!3m2!1sen!2ses!4v1669635395914!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+        <div class="soluciones__item">
+          <img src="../assets/solucion1.png" alt="decorative">
+          <div class="solucion">
+            <h2>Branding 360º</h2>
+            <p>Una marca con estrategia conseguirá que potencies tu negocio, te sientas confiada y agilices tus procesos de forma práctica. Aunque creas que el diseño es lo último en lo que debes pensar.
+            <p>Todo entra por los ojos…</p>
+            <ul class="solucion__list">
+              <li>Estrategia de marca</li>
+              <li>Dirección Creativa</li>
+              <li>Diseño de identidad</li>
+              <li>Implementación de tu marca</li>
+            </ul>
+            <a class="button">Quiero saber más</a>
+          </div>
         </div>
 
-        <form class="form-contact" action="" method="get">
-          <fieldset>
-            <legend>Información Personal</legend>
-            <label>
-              Nombre:
-              <input type="text" name="nombre" required  placeholder="Ingrese su nombre"  >
-            </label>
-            <label>
-              Apellidos: 
-              <input type="text" name="apellido" placeholder="Ingrese su Apellido" required>
-            </label>
-            <label>
-              Email: 
-              <input type="email" name="mail" placeholder="Ingrese su mail" required>
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend>Sexo</legend>
-            <select name="tema">
-              <option value="Diseño web">Large</option>
-              <option value="Redes Sociales">Medium</option>
-              <option value="Tiena Gráfica">Small</option>
-            </select>
-            <label>
-                Detalles:
-                <textarea name="mensaje" placeholder="Ingrese un mensaje"></textarea>
-            </label>
-          </fieldset>
-          <label>
-              Acepto terminos y condiciones
-              <input type="checkbox" name="termyCond" value="acepto" required>
-          </label>
-          <button type="submit">Enviar</button>
-        </form>
+        <div class="soluciones__item">
+          <div class="solucion">
+            <img src="../assets/solucion2.png" alt="decorative">
+            <h2>Redes sociales amigas</h2>
+            <p>Adaptamos tu branding en las redes sociales en las que estés presente, desde fotos de perfil, banners, destacados, portadas o plantillas para agilizar tu trabajo. Te entregamos todos los archivos listos para subir a tus plataformas (formatos, tamaños y resoluciones).</p>
+            <ul class="solucion__list">
+              <li>Packs de plantillas</li>
+              <li>Gifs animados para Stories</li>
+              <li>Vídeo para Reels</li>
+            </ul>
+            <a class="button">Quiero saber más</a>
+          </div>
+        </div>
+
+        <div class="soluciones__item">
+          <img src="../assets/solucion3.png" alt="decorative">
+          <div class="solucion">
+            <h2>Diseño y desarrollo web</h2>
+            <p>¿Te imaginas tu tienda favorita sin ventanas, mostradores o nadie disponible para atenderte?</p>
+            <p>Pues lo mismo le pasará a tu proyecto si no tienes un buen espacio en internet. Ahora, más que nunca, tener presencia online no es una opción: es una necesidad para cualquier empresa que quiera seguir creciendo en el mercado actual. Si desea vender tu producto o servicio en Internet, necesitas un sitio web.</p>
+            <ul class="solucion__list">
+              <li>Estrategia de marca</li>
+              <li>Dirección Creativa</li>
+              <li>Diseño de identidad</li>
+              <li>Implementación de tu marca</li>
+            </ul>
+            <a class="button">Quiero saber más</a>
+          </div>
+        </div>
+
       </section>
 
     </main>
