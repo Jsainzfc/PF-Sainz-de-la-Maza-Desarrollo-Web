@@ -6,33 +6,6 @@
 /* Versión para desktop */
 @include breakpoint (medium) {
 
-  .servicios__items {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .servicio {
-    gap: 35px;
-  }
-
-  .angle {
-    display: block;
-  }
-
-  .container--about {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .about {
-    width: 45%;
-    gap: 30px;
-  }
-
-  .about img {
-    width: 50%;
-  }
-
   .tienda {
     margin: 150px 5% 0 5%;
     border-top: 1px solid black;

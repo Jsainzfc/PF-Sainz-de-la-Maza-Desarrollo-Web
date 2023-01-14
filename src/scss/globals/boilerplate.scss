@@ -5,17 +5,34 @@ body {
   font-family: 'Poppins', sans-serif;
   color: $fuente;
   display: grid;
+  gap: 65px;
   grid-template-areas:
   "nav"
   "header"
   "main"
   "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 85px auto 1fr 440px;
+  grid-template-rows: 85px auto 1fr auto;
 
   @include breakpoint (medium) {
     grid-template-rows: auto auto 1fr auto;
   }
+}
+
+nav {
+  grid-area: nav;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
 }
 
 .flex {
@@ -113,7 +130,7 @@ p {
   @extend .flex__col;
   gap: 35px;
   padding: 100px 30px 60px 30px;
-  margin-top: -83px;
+  margin-top: -138px;
   background-position: center center;
   background-size: cover;
   justify-content: center;
@@ -133,6 +150,11 @@ p {
     margin-top: -160px;
     padding: 200px 50px 120px 50px;
   }
+}
+
+main {
+  @extend .flex__col, .flex--center;
+  gap: 80px;
 }
 
 .important-text {

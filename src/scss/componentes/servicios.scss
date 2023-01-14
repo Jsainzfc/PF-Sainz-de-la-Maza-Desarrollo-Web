@@ -1,16 +1,27 @@
-.servicios__items {
-  display : grid;
-  grid-template-columns: 1fr;
-  gap: 80px;
+@use "../util/" as *;
+
+.servicios {
+  gap: 50px;
+
+  &__items {
+    display : grid;
+    grid-template-columns: 1fr;
+    gap: 80px;
+
+    @include breakpoint (medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 
 .servicio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
+  gap: 25px;
 
-.servicio img{
-  width: 70%;
+  img {
+    width: 70%;
+  }
+
+  @include breakpoint (medium) {
+    gap: 35px;
+  }
 }
