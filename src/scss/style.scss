@@ -4,41 +4,7 @@
 
 
 /* Versión para desktop */
-@include breakpoint (medium) {
-
-  .tienda {
-    margin: 150px 5% 0 5%;
-    border-top: 1px solid black;
-    padding: 100px 0;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 100px;
-  }
-
-  .tienda__categories {
-    border: none;
-    align-self: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    font-weight: 600;
-  }
-
-  .tienda__products {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-  }
-
-  .product {
-    gap: 30px;
-    align-items: center;
-  }
-
-  .product img {
-    width: 60%;
-  }
-}
-
-@media (min-width: 1200px) {
+@include breakpoint (large) {
   .navBar__logo {
     width: 250px;
   }

@@ -23,14 +23,14 @@
         <img class="navBar__logo" src="/assets/logo.png" alt="logo" >
       </a>
 
-      <div class="navBar__menu">
-        <ul class="navBar__navigation">
-          <li><a href="/soluciones.html">Soluciones</a></li>
-          <li><a href="/trabajos.html">Trabajos</a></li>
-          <li><a href="/tienda-grafica.html">Tienda Gráfica</a></li>
+      <div class="flex__col flex--center navBar__menu">
+        <ul class="flex__col flex--center center-text navBar__navigation">
+          <li><a href="/src/soluciones.html">Soluciones</a></li>
+          <li><a href="/src/trabajos.html">Trabajos</a></li>
+          <li><a href="/src/tienda-grafica.html">Tienda Gráfica</a></li>
         </ul>
         
-        <ul class="navBar__ssnn">
+        <ul class="flex--center navBar__ssnn">
           <li>
             <a href="/">
               <img class="navBar__ssnn--icon" src="/assets/instagram.png" alt="Instagram" >
@@ -48,42 +48,42 @@
           </li>
         </ul>
 
-        <a class="navBar__button button" href="./contacto.html">Contactar</a>
+        <a class="navBar__button button" href="/src/contacto.html">Contactar</a>
       </div>
   
-      <a class="navBar__cart" href="/">
-        <img src="/assets/cart.png" alt="Carrito" >
+      <a class="flex navBar__cart" href="/">
+        <img src="/assets/cart.png" alt="Carrito" />
         <p>0</p>
       </a>
 
     </nav>
 
-    <header>
+    <header class="header--contact">
       <h1 class="center-text">Contáctanos</h1>
     </header>
 
     <main>
 
-      <section class="contact">
-        <div class="informacion">
+      <section class="contact flex__col flex--center">
+        <div class="informacion flex__col flex--center">
           <h2>Yellow Cactus Studio</h2>
           <a>email-account@gmail.com</a>
           <p>+34 123 45 67 89</p>
           <p>Madrid, España</p>
-          <ul class="informacion__ssnn">
+          <ul class="informacion__ssnn flex">
             <li>
               <a>
-                <img src="../assets/instagram.png" alt="instagram-logo">
+                <img src="/assets/instagram.png" alt="instagram-logo">
               </a>
             </li>
             <li>
               <a>
-                <img src="../assets/youtube.png" alt="youtube-logo">
+                <img src="/assets/youtube.png" alt="youtube-logo">
               </a>
             </li>
             <li>
               <a>
-                <img src="../assets/linkedin.png" alt="linkedin-logo">
+                <img src="/assets/linkedin.png" alt="linkedin-logo">
               </a>
             </li>
           </ul>
@@ -91,8 +91,8 @@
           </iframe>
         </div>
 
-        <form class="form-contact" action="" method="get">
-          <fieldset>
+        <form class="form-contact flex__col flex--center center-text" action="" method="get">
+          <fieldset class="flex__col flex--center">
             <legend>Información Personal</legend>
             <label>
               Nombre:
@@ -107,35 +107,32 @@
               <input type="email" name="mail" placeholder="Ingrese su mail" required>
             </label>
           </fieldset>
-          <fieldset>
-            <legend>Sexo</legend>
+          <fieldset class="flex__col flex--center">
+            <legend>Sobre qué necesitas ayuda</legend>
             <select name="tema">
-              <option value="Diseño web">Large</option>
-              <option value="Redes Sociales">Medium</option>
-              <option value="Tiena Gráfica">Small</option>
+              <option value="Diseño web">Diseño Web</option>
+              <option value="Redes Sociales">Redes Sociales</option>
+              <option value="Tiena Gráfica">Tienda Gráfica</option>
             </select>
-            <label>
-                Detalles:
-                <textarea name="mensaje" placeholder="Ingrese un mensaje"></textarea>
-            </label>
+              <textarea name="mensaje" placeholder="Ingrese un mensaje"></textarea>
           </fieldset>
           <label>
               Acepto terminos y condiciones
               <input type="checkbox" name="termyCond" value="acepto" required>
           </label>
-          <button type="submit">Enviar</button>
+          <button class="button" type="submit">Enviar</button>
         </form>
       </section>
 
     </main>
 
-    <footer class="container">
-      <div class="footer__identity">
-        <img src="../assets/logo-white.png" alt="logo" >
+    <footer class="footer flex__col flex--center center-text">
+      <div class="footer__identity flex__col flex--center">
+        <img src="/assets/logo-white.png" alt="logo" >
         <p>Branding y estrategia para marcas 360º</p>
       </div>
 
-      <ul class="footer__navigation">
+      <ul class="footer__navigation flex__col flex--center">
         <li>
           <a>Soluciones</a>
         </li>
@@ -147,10 +144,10 @@
         </li>
       </ul>
 
-      <div class="footer__ssnn">
-        <a><img src="../assets/instagram.png" alt="instagram" ></a>
-        <a><img src="../assets/youtube.png" alt="youtube" ></a>
-        <a><img src="../assets/linkedin.png" alt="linkedin" ></a>
+      <div class="footer__ssnn flex">
+        <a><img src="/assets/instagram.png" alt="instagram" ></a>
+        <a><img src="/assets/youtube.png" alt="youtube" ></a>
+        <a><img src="/assets/linkedin.png" alt="linkedin" ></a>
       </div>
     </footer>
 

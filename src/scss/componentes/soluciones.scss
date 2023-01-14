@@ -1,95 +1,24 @@
-/* Soluciones */
-.header--soluciones {
-  padding: 250px 50px 0px 50px;
-  align-items: center;
-}
-
 .soluciones {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 100px 30px;
   gap: 50px;
-}
 
-.soluciones__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 35px;
-}
+  &__item {
+    gap: 35px;
 
-.soluciones__item img {
-  width: 75%;
+    img {
+      width: 50%;
+    }
+  }
 }
 
 .solucion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 25px;
+
+  &__list {
+    gap: 20px;
+
+    li {
+      font-size: 18px;
+    }
+  }
 }
 
-.solucion__list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.solucion__list li{
-  font-size: 18px;
-}
-
-.gallery {
-  display: flex;
-  flex-direction: column;
-  padding: 0 50px 150px 50px;
-  gap: 50px;
-}
-
-.gallery img {
-  width: 100%;
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 50px 50px;
-  gap: 50px;
-}
-
-.informacion {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  align-items: center;
-}
-
-.informacion__ssnn {
-  display: flex;
-  gap: 20px;
-}
-
-.informacion img {
-  width: 30px;
-}
-
-.form-contact {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.form-contact fieldset{
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.form-contact label {
-  font-size: 18px;
-}
-
-.maps {
-  width: 100%;
-}

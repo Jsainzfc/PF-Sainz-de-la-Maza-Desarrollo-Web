@@ -1,0 +1,60 @@
+@use "../util/" as *;
+
+.contact {
+  gap: 50px;
+}
+
+.informacion {
+  gap: 25px;
+
+  &__ssnn {
+    gap: 20px;
+  }
+
+  img {
+    width: 30px;
+  }
+}
+
+.form-contact {
+  gap: 60px;
+
+  fieldset{
+    gap: 35px;
+
+    legend {
+      margin-bottom: 25px;
+      font-weight: 500;
+      font-size: 20px;
+    }
+
+    label {
+      font-size: 18px;
+  
+      input[type="text"], input[type="email"]{
+        border: none;
+        border-bottom: 1px solid $oscuro;    
+      }
+    }
+
+    select {
+      font-size: 18px;
+      border: none;
+      border-bottom: 1px solid $oscuro;
+    }
+
+    textarea {
+      width: 100%;
+    }
+  }
+
+  input[type="checkbox"] {
+    border: 1px solid $oscuro;
+    width: 15px;
+    aspect-ratio: 1;
+  }
+}
+
+.maps {
+  width: 100%;
+}

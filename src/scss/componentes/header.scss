@@ -1,6 +1,24 @@
 @use "../globals/" as *;
 
-.header--index {
-  @extend .header;
-  background-image: url("../../assets/index-header.jpg");
+.header {
+  &--index {
+    @extend .header;
+    background-image: url("/assets/index-header.jpg");
+  }
+
+  &--soluciones {
+    @extend .header;
+    background-image: url("/assets/fondo-soluciones.jpg");
+    align-items: center;
+  }
+
+  &--tienda {
+    @extend .header;
+    background-image: url('/assets/background.jpg');
+  }
+
+  &--contact {
+    @extend .header;
+    background-image: url('/assets/fondo-contact.jpg');
+  }
 }

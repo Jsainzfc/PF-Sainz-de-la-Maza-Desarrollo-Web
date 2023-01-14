@@ -129,11 +129,12 @@ p {
 .header {
   @extend .flex__col;
   gap: 35px;
-  padding: 100px 30px 60px 30px;
+  padding: 150px 30px 90px 30px;
   margin-top: -138px;
   background-position: center center;
   background-size: cover;
   justify-content: center;
+  min-height: 75vh;
   
   p {
     font-weight: 300;
