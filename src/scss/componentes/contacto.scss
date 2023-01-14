@@ -2,6 +2,12 @@
 
 .contact {
   gap: 50px;
+
+  @include breakpoint(medium) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .informacion {
@@ -21,6 +27,11 @@
 
   fieldset{
     gap: 35px;
+    width: 100%;
+
+    * {
+      width: 100%;
+    }
 
     legend {
       margin-bottom: 25px;
@@ -32,8 +43,10 @@
       font-size: 18px;
   
       input[type="text"], input[type="email"]{
-        border: none;
-        border-bottom: 1px solid $oscuro;    
+        border: 1px solid $oscuro;
+        background-color: #fafafa;
+        padding: 20px;
+        font-size: 18px;
       }
     }
 
@@ -41,10 +54,12 @@
       font-size: 18px;
       border: none;
       border-bottom: 1px solid $oscuro;
+      padding: 20px;
     }
 
     textarea {
-      width: 100%;
+      padding: 20px;
+      font-size: 18px;
     }
   }
 
@@ -53,6 +68,7 @@
     width: 15px;
     aspect-ratio: 1;
   }
+
 }
 
 .maps {

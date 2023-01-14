@@ -106,6 +106,11 @@ a, a:visited {
   border-radius: 6px;
   font-size: 16px;
 }
+@media (min-width: 768px) {
+  .button {
+    font-size: 18px;
+  }
+}
 
 .font-base, .important-text, p, .h_base, h3, h1, h2 {
   font-style: normal;
@@ -126,6 +131,12 @@ h1, h2 {
   }
 }
 
+@media (min-width: 768px) {
+  h2 {
+    font-size: 48px;
+  }
+}
+
 h3 {
   font-size: 24px;
 }
@@ -142,7 +153,7 @@ p {
 }
 @media (min-width: 768px) {
   p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 28px;
   }
 }
@@ -180,13 +191,15 @@ p {
 @media (min-width: 768px) {
   .header p, .header--index p, .header--soluciones p, .header--tienda p, .header--contact p {
     font-size: 24px;
-    line-height: 1.2;
+    line-height: 36px;
   }
 }
 @media (min-width: 768px) {
   .header, .header--index, .header--soluciones, .header--tienda, .header--contact {
-    margin-top: -160px;
+    margin-top: -210px;
     padding: 200px 50px 120px 50px;
+    gap: 50px;
+    min-height: 100vh;
   }
 }
 
@@ -218,7 +231,6 @@ main {
   .about {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
 
@@ -240,6 +252,11 @@ main {
 .footer__navigation li a {
   color: white;
 }
+@media (min-width: 768px) {
+  .footer__navigation li a {
+    font-size: 18px;
+  }
+}
 .footer__ssnn {
   gap: 20px;
   justify-self: flex-end;
@@ -247,6 +264,11 @@ main {
 .footer__ssnn img {
   width: 25px;
   filter: brightness(0) invert(1);
+}
+@media (min-width: 768px) {
+  .footer {
+    gap: 50px;
+  }
 }
 
 .header--index {
@@ -264,9 +286,11 @@ main {
 }
 
 .navBar {
+  width: 100%;
   padding: 20px;
   display: grid;
   grid-template-columns: auto 1fr auto;
+  justify-items: center;
   gap: 20px;
   align-items: center;
   z-index: 1;
@@ -286,8 +310,7 @@ main {
 }
 @media (min-width: 768px) {
   .navBar__logo {
-    width: 75%;
-    padding-left: 12.5%;
+    max-width: 500px;
   }
 }
 .navBar__menu {
@@ -342,7 +365,8 @@ main {
 }
 @media (min-width: 768px) {
   .navBar {
-    gap: 50px;
+    grid-template-columns: repeat(3, auto);
+    padding: 30px 0px;
   }
 }
 
@@ -357,6 +381,11 @@ main {
   z-index: 0;
   gap: 30px;
   padding: 50px 30px;
+}
+@media (min-width: 768px) {
+  .opinions p {
+    max-width: 90%;
+  }
 }
 
 .angle {
@@ -383,13 +412,13 @@ main {
   gap: 50px;
 }
 .servicios__items {
-  display: grid;
-  grid-template-columns: 1fr;
   gap: 80px;
 }
 @media (min-width: 768px) {
   .servicios__items {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
   }
 }
 
@@ -402,6 +431,7 @@ main {
 @media (min-width: 768px) {
   .servicio {
     gap: 35px;
+    justify-content: flex-start;
   }
 }
 
@@ -413,6 +443,19 @@ main {
 }
 .soluciones__item img {
   width: 50%;
+}
+@media (min-width: 768px) {
+  .soluciones__item {
+    width: 45%;
+  }
+}
+@media (min-width: 768px) {
+  .soluciones {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 80px;
+  }
 }
 
 .solucion {
@@ -449,15 +492,16 @@ main {
 }
 @media (min-width: 768px) {
   .tienda__products {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 80px;
   }
 }
 @media (min-width: 768px) {
   .tienda {
-    margin: 150px 5% 0 5%;
-    border-top: 1px solid black;
-    padding: 100px 0;
+    margin: 0 5%;
+    border-top: 1px solid #1b1a1a;
+    padding: 50px 0;
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 100px;
@@ -475,7 +519,7 @@ main {
 }
 @media (min-width: 768px) {
   .product img {
-    width: 60%;
+    width: 100%;
   }
 }
 .product__price {
@@ -529,9 +573,29 @@ main {
 .gallery img {
   width: 100%;
 }
+@media (min-width: 768px) {
+  .gallery img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+@media (min-width: 768px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .contact {
   gap: 50px;
+}
+@media (min-width: 768px) {
+  .contact {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .informacion {
@@ -549,6 +613,10 @@ main {
 }
 .form-contact fieldset {
   gap: 35px;
+  width: 100%;
+}
+.form-contact fieldset * {
+  width: 100%;
 }
 .form-contact fieldset legend {
   margin-bottom: 25px;
@@ -559,16 +627,20 @@ main {
   font-size: 18px;
 }
 .form-contact fieldset label input[type=text], .form-contact fieldset label input[type=email] {
-  border: none;
-  border-bottom: 1px solid #1b1a1a;
+  border: 1px solid #1b1a1a;
+  background-color: #fafafa;
+  padding: 20px;
+  font-size: 18px;
 }
 .form-contact fieldset select {
   font-size: 18px;
   border: none;
   border-bottom: 1px solid #1b1a1a;
+  padding: 20px;
 }
 .form-contact fieldset textarea {
-  width: 100%;
+  padding: 20px;
+  font-size: 18px;
 }
 .form-contact input[type=checkbox] {
   border: 1px solid #1b1a1a;

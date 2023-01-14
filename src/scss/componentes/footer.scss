@@ -19,6 +19,10 @@
 
     li a {
       color: $blanco;
+
+      @include breakpoint(medium) {
+        font-size: 18px;
+      }
     }
   }
 
@@ -30,5 +34,9 @@
       width: 25px;
       filter: brightness(0) invert(1);
     }
+  }
+
+  @include breakpoint(medium) {
+    gap: 50px;
   }
 }

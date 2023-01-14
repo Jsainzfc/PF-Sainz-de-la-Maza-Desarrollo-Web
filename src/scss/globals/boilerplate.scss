@@ -67,6 +67,10 @@ a, a:visited {
   padding: 10px 16px;
   border-radius: 6px;
   font-size: 16px;
+
+  @include breakpoint(medium) {
+    font-size: 18px;
+  }
 }
 
 .font-base {
@@ -89,6 +93,12 @@ h1, h2 {
   }
 }
 
+h2 {
+  @include breakpoint (medium) {
+    font-size: 48px;
+  }
+}
+
 h3 {
   @extend .h_base;
   font-size: 24px;
@@ -105,7 +115,7 @@ p {
   line-height: 24px;
 
   @include breakpoint (medium) {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 28px;
   }
 }
@@ -143,13 +153,15 @@ p {
 
     @include breakpoint (medium) {
       font-size: 24px;
-      line-height: 1.2;
+      line-height: 36px;
     }
   }
 
   @include breakpoint (medium) {
-    margin-top: -160px;
+    margin-top: -210px;
     padding: 200px 50px 120px 50px;
+    gap: 50px;
+    min-height: 100vh;
   }
 }
 

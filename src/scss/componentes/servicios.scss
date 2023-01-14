@@ -4,12 +4,12 @@
   gap: 50px;
 
   &__items {
-    display : grid;
-    grid-template-columns: 1fr;
     gap: 80px;
 
     @include breakpoint (medium) {
+      display: grid;
       grid-template-columns: repeat(2, 1fr);
+      align-items: flex-start;
     }
   }
 }
@@ -23,5 +23,6 @@
 
   @include breakpoint (medium) {
     gap: 35px;
+    justify-content: flex-start;
   }
 }

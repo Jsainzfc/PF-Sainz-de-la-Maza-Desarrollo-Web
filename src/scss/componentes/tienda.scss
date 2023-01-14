@@ -23,15 +23,16 @@
     gap: 50px;
     
     @include breakpoint (medium) {
+      display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 50px;
+      gap: 80px;
     }
   }
 
   @include breakpoint (medium) {
-    margin: 150px 5% 0 5%;
-    border-top: 1px solid black;
-    padding: 100px 0;
+    margin: 0 5%;
+    border-top: 1px solid $oscuro;
+    padding: 50px 0;
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 100px;
@@ -49,7 +50,7 @@
     width: 50%;
 
     @include breakpoint (medium) {
-      width: 60%;
+      width: 100%;
     }
   }
 
