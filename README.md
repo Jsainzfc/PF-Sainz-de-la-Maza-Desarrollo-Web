@@ -1,23 +1,23 @@
-# PreEntrega 2 - Curso desarrollo web de Coderhouse
+# PreEntrega 3 - Curso desarrollo web de Coderhouse
 
-## Información Previa
+## Información General
 
-Esta preEntrega está directamente basada en la anterior pre-entrega. He cogido el proyecto tal cual lo entregué, he añadido control de versiones con git y subido el proyecto a github, y me va a servir de base para desarrollar el nuevo proyecto.
+Esta preEntrega presenta el proyecto web completamente maquetado para versiones de móvil, tableta y escritorio. Se ha desarrollado siguiendo la metodología mobile-first y se han empleado los siguientes breakpoints: 768px y 1200px.
 
-## Páginas escogidas para esta preEntrega
+El estilado se ha desarrollado completamente en SASS utilizando la sintaxis de SCSS. Se he intentado estructurar el estilado de forma que cada componente tenga su propia hoja de estilos.
 
-Dado que la preEntrega pide el desarrollo completo de dos páginas, las que he escogido para ello son la Home y la Tienda Gráfica.
-La Home ya estaba ajustada y tenía código CSS, pero voy a modificarlo para ajustarse al objetivo de esta preEntrega: codificar un diseño responsive basado en mobile-first y haciendo uso de los grids de Bootstrap.
-La Tienda Gráfica no tiene ningún CSS propio (los elementos que comparte con la Home como la Navbar y el footer están ajustados al contar con un CSS global), por lo que plantearé el mobile-first desde cero.
+Se ha buscado tener el mayor número de clases genéricas posibles para reducir al máximo el código repetido.
+
+Se han empleado variables globales para los colores y elementos de la estructura general de la página.
+
+En ningún momento se emplea Bootstrap en este proyecto.
+
+En cuanto al módulo para la compilación de sass: he usado directamente sass en vez de node-sass. Previamente a este curso había trabajado con sass y me siento más cómodo a la hora de estructurar el código con el compilador de sass.
+
+De igual modo, no he empleado @import para los diferentes módulos de sass. En su lugar he empleado @use y @forward ya que sass no recomienda el uso de @import hoy en día.
+
+Se han buscado utilizar HTML semántico en la mayor medida posible. Todas las imágenes tienen alt. He incluido un favicon y las técnicas de meta tags description y keywords.
 
 ## Estructura de la página
 
-Para plantear la estructura de la página he preferido emplear el sistema de grid propio de CSS (gridbox) así como flexbox para algunos componentes. Me he sentido más cómodo empleando dicho sistema que el de Bootstrap.
-
-## Animaciones incluidas
-
-He incluido animaciones de la librería AOS a algunas secciones, así como una animación personalizada al menú hamburguesa en mobile cuando lo abres y lo cierras.
-
-## Resto de páginas
-
-Las demás páginas del proyecto van a seguir estando, ya que no creo que merezca la pena quitarlas del proyecto. Sin embargo, en estas solo está planteada la estructura en HTML, no me he parado a mirar todavía el aspecto final de dichas páginas ni si tienen algún problema de display o adaptabilidad. Por ahora solo me he centrado en las dos páginas escogidas para este proyecto.
+Para plantear la estructura de la página he preferido emplear el sistema de grid propio de CSS (gridbox) así como flexbox para algunos componentes.
