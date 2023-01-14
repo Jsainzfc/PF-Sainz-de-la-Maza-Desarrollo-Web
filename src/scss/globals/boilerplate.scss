@@ -17,6 +17,10 @@ body {
   @include breakpoint (medium) {
     grid-template-rows: auto auto 1fr auto;
   }
+
+  @include breakpoint (large) {
+    gap: 125px;
+  }
 }
 
 nav {
@@ -163,11 +167,26 @@ p {
     gap: 50px;
     min-height: 100vh;
   }
+
+  @include breakpoint (large) {
+    margin-top: -280px;
+    padding-top: 280px;
+  }
+
+  &>* {
+    @include breakpoint(large) {
+      max-width: 75%;
+    }
+  }
 }
 
 main {
   @extend .flex__col, .flex--center;
   gap: 80px;
+
+  @include breakpoint (large) {
+    gap: 125px;
+  }
 }
 
 .important-text {

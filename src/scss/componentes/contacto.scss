@@ -73,4 +73,8 @@
 
 .maps {
   width: 100%;
+
+  @include breakpoint(large) {
+    width: 80%;
+  }
 }

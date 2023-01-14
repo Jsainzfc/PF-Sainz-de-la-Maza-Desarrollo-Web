@@ -1,4 +1,5 @@
 @use "../globals/" as *;
+@use "../util/" as *;
 
 .header {
   &--index {
@@ -15,10 +16,22 @@
   &--tienda {
     @extend .header;
     background-image: url('/assets/background.jpg');
+
+    h1 {
+      @include breakpoint(large) {
+        max-width: 100%;
+      }
+    }
   }
 
   &--contact {
     @extend .header;
     background-image: url('/assets/fondo-contact.jpg');
+
+    h1 {
+      @include breakpoint(large) {
+        max-width: 100%;
+      }
+    }
   }
 }

@@ -18,6 +18,10 @@
       height: 5px;
     }
   }
+
+  @include breakpoint(large) {
+    display: none;
+  }
 }
 
 .transform_active {

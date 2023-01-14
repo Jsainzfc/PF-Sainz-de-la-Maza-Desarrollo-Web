@@ -13,6 +13,10 @@
     @include breakpoint (medium) {
       width: 45%;
     }
+
+    @include breakpoint (large) {
+      width: 100%;
+    }
   }
 
   @include breakpoint (medium) {
@@ -20,6 +24,13 @@
     flex-wrap: wrap;
     column-gap: 100px;
     row-gap: 80px;
+  }
+
+  @include breakpoint (large) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    gap: 150px;
   }
 }
 

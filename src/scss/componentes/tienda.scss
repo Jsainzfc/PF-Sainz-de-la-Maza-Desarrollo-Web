@@ -27,6 +27,12 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 80px;
     }
+
+    @include breakpoint (large) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 100px;
+    }
   }
 
   @include breakpoint (medium) {

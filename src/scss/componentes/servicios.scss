@@ -11,6 +11,10 @@
       grid-template-columns: repeat(2, 1fr);
       align-items: flex-start;
     }
+
+    @include breakpoint (large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }
 

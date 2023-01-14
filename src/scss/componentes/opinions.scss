@@ -11,6 +11,11 @@
     z-index: 0;
     gap: 30px;
     padding: 50px 30px;
+
+    @include breakpoint(large) {
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
   }
 
   p {

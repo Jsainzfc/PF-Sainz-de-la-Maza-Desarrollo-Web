@@ -24,6 +24,10 @@
         font-size: 18px;
       }
     }
+
+    @include breakpoint(medium) {
+      flex-direction: row;
+    }
   }
 
   &__ssnn {
@@ -38,5 +42,11 @@
 
   @include breakpoint(medium) {
     gap: 50px;
+  }
+
+  @include breakpoint(medium) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 80px;
   }
 }
