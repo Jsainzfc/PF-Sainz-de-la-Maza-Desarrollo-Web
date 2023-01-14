@@ -1,0 +1,31 @@
+@use "../util" as *;
+
+.hamburger {
+  position: relative;
+  width: 40px;
+  z-index: 1;
+
+  &::after, &::before, span {
+    background: $oscuro;
+    content: "";
+    display: block;
+    height: 3px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: 0.5s;
+  }
+}
+
+.transform_active {
+  &::before {
+    transform: translateY(10px) rotate(135deg);
+  }
+
+  &::after {
+    transform: translateY(-10px) rotate(-135deg);
+  }
+
+  span {
+    transform: scale(0);
+  }
+}

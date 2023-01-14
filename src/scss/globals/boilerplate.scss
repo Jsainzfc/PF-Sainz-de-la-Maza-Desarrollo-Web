@@ -1,12 +1,9 @@
+@use "../util/" as *;
+
 body {
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  color: #323232;
-  font-weight: 400;
-	line-height: 1;
-  margin: 0;
-	padding: 0;
-	border: 0;
+  color: $fuente;
   display: grid;
   grid-template-areas:
   "nav"
@@ -17,44 +14,63 @@ body {
   grid-template-rows: 85px auto 1fr 440px;
 }
 
-ul {
-  list-style: none;
+.flex {
+  display: flex;
+
+  &__col {
+    @extend .flex;
+    flex-direction: column;
+  }
+
+  &--center {
+    @extend .flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 a, a:visited {
   text-decoration: none;
-  color: #323232;
+  color: $fuente;
   cursor: pointer;
 }
 
-.button {
-  background-color: #1b1a1a;
-  color: white;
-  padding: 10px 16px;
+.center-text {
   text-align: center;
+}
+
+.button {
+  @extend .center-text;
+  background-color: $oscuro;
+  color: $blanco;
+  padding: 10px 16px;
   border-radius: 6px;
   font-size: 16px;
 }
 
-.h_base {
-  font-family: orpheuspro, serif;
-  font-weight: 400;
+.font-base {
   font-style: normal;
 }
 
+.h_base {
+  @extend .font-base;
+  font-family: orpheus, serif;
+  font-weight: 400;
+}
+
 h1, h2 {
+  @extend .h_base;
   font-size: 42px;
   line-height: 110%;
 }
 
 h3 {
-  font-family: orpheuspro, serif;
-  font-weight: 400;
-  font-style: normal;
+  @extend .h_base;
   font-size: 24px;
 }
 
 p {
+  @extend .font-base;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
@@ -67,20 +83,13 @@ p {
   object-position: center center;
 }
 
-.center-text {
-  text-align: center;
-}
-
 .container {
-  padding: 60px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
-  text-align: center;
+  @extend .flex__col, .flex--center, .center-text;
+  padding: 0 30px;
 }
 
 .important-text {
+  @extend .font-base;
   font-weight: 700;
   font-size: 18px;
 }
