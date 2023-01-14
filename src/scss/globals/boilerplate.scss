@@ -12,6 +12,10 @@ body {
   "footer";
   grid-template-columns: 1fr;
   grid-template-rows: 85px auto 1fr 440px;
+
+  @include breakpoint (medium) {
+    grid-template-rows: auto auto 1fr auto;
+  }
 }
 
 .flex {
@@ -62,11 +66,19 @@ h1, h2 {
   @extend .h_base;
   font-size: 42px;
   line-height: 110%;
+
+  @include breakpoint (medium) {
+    font-size: 72px;
+  }
 }
 
 h3 {
   @extend .h_base;
   font-size: 24px;
+
+  @include breakpoint (medium) {
+    font-size: 36px;
+  }
 }
 
 p {
@@ -74,6 +86,11 @@ p {
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+
+  @include breakpoint (medium) {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 .circle-image {
@@ -86,6 +103,36 @@ p {
 .container {
   @extend .flex__col, .flex--center, .center-text;
   padding: 0 30px;
+
+  @include breakpoint (medium) {
+    padding: 0 8%;
+  }
+}
+
+.header {
+  @extend .flex__col;
+  gap: 35px;
+  padding: 100px 30px 60px 30px;
+  margin-top: -83px;
+  background-position: center center;
+  background-size: cover;
+  justify-content: center;
+  
+  p {
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+
+    @include breakpoint (medium) {
+      font-size: 24px;
+      line-height: 1.2;
+    }
+  }
+
+  @include breakpoint (medium) {
+    margin-top: -160px;
+    padding: 200px 50px 120px 50px;
+  }
 }
 
 .important-text {

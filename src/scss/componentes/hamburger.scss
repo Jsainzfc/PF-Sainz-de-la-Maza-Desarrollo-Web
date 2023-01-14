@@ -13,6 +13,10 @@
     border-radius: 3px;
     margin: 7px 0;
     transition: 0.5s;
+
+    @include breakpoint (medium) {
+      height: 5px;
+    }
   }
 }
 
@@ -27,5 +31,9 @@
 
   span {
     transform: scale(0);
+  }
+
+  @include breakpoint (medium) {
+    width: 50px;
   }
 }
