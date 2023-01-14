@@ -1,0 +1,16 @@
+.servicios__items {
+  display : grid;
+  grid-template-columns: 1fr;
+  gap: 80px;
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.servicio img{
+  width: 70%;
+}

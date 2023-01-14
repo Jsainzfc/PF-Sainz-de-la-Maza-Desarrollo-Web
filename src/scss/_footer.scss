@@ -1,0 +1,36 @@
+footer {
+  background-color: #1b1a1a;
+  color: white;
+}
+
+.footer__identity {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer__identity img{
+  width: 75%;
+}
+
+.footer__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer__navigation li a{
+  color: white;
+}
+
+.footer__ssnn {
+  display: flex;
+  gap: 20px;
+  justify-self: flex-end;
+}
+
+.footer__ssnn img {
+  width: 25px;
+  filter: brightness(0) invert(1);
+}

@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 135px 30px 80px 30px;
+  margin-top: -83px;
+  background-position: center center;
+  background-size: cover;
+  justify-content: center;
+}
+
+header p {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+}
+
+.header--index {
+  background-image: url("./assets/index-header.jpg");
+}

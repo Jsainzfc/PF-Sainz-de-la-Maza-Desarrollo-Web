@@ -1,0 +1,113 @@
+/* Navbar Styles */
+
+.navBar {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+  align-items: center;
+  z-index: 1;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.0);
+  position: relative;
+}
+
+.navBar--active {
+  background-color: white;
+}
+
+.navBar a{
+  z-index: 1;
+}
+
+.navBar__logo {
+  width: 100%;
+}
+
+.navBar__menu {
+  display: none;
+}
+
+.navBar__menu--active {
+  width: 100%;
+  padding: 30px 0;
+  background-color: white;
+  position: absolute;
+  top: 82px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  overflow: hidden;
+}
+
+.navBar__navigation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  gap: 40px;
+}
+
+.navBar__ssnn {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navBar__ssnn--icon {
+  width: 30px;
+}
+
+.navBar .button {
+  color: white;
+}
+
+.navBar__cart {
+  display: flex;
+  gap: 5px;
+}
+
+.navBar__cart img {
+  width: 20px;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.navBar__cart p {
+  text-decoration: none;
+}
+
+/* Hamburger Menu */
+
+.hamburger {
+  position: relative;
+  width: 40px;
+  z-index: 1;
+}
+
+.hamburger::after,
+.hamburger::before,
+.hamburger span {
+  background: black;
+  content: "";
+  display: block;
+  height: 3px;
+  border-radius: 3px;
+  margin: 7px 0;
+  transition: 0.5s;
+}
+
+.transform_active:before {
+  transform: translateY(10px) rotate(135deg);
+}
+.transform_active:after {
+  transform: translateY(-10px) rotate(-135deg);
+}
+.transform_active span {
+  transform: scale(0);
+}
