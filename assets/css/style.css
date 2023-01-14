@@ -315,14 +315,14 @@ main {
 }
 
 .header--index {
-  background-image: url("/assets/index-header.jpg");
+  background-image: url("../../assets/index-header.jpg");
 }
 .header--soluciones {
-  background-image: url("/assets/fondo-soluciones.jpg");
+  background-image: url("../../assets/fondo-soluciones.jpg");
   align-items: center;
 }
 .header--tienda {
-  background-image: url("/assets/background.jpg");
+  background-image: url("../../assets/background.jpg");
 }
 @media (min-width: 1200px) {
   .header--tienda h1 {
@@ -330,7 +330,7 @@ main {
   }
 }
 .header--contact {
-  background-image: url("/assets/fondo-contact.jpg");
+  background-image: url("../../assets/fondo-contact.jpg");
 }
 @media (min-width: 1200px) {
   .header--contact h1 {

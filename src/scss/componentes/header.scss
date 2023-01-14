@@ -4,18 +4,18 @@
 .header {
   &--index {
     @extend .header;
-    background-image: url("/assets/index-header.jpg");
+    background-image: url("../../assets/index-header.jpg");
   }
 
   &--soluciones {
     @extend .header;
-    background-image: url("/assets/fondo-soluciones.jpg");
+    background-image: url("../../assets/fondo-soluciones.jpg");
     align-items: center;
   }
 
   &--tienda {
     @extend .header;
-    background-image: url('/assets/background.jpg');
+    background-image: url('../../assets/background.jpg');
 
     h1 {
       @include breakpoint(large) {
@@ -26,7 +26,7 @@
 
   &--contact {
     @extend .header;
-    background-image: url('/assets/fondo-contact.jpg');
+    background-image: url('../../assets/fondo-contact.jpg');
 
     h1 {
       @include breakpoint(large) {
