@@ -2,7 +2,7 @@
 
 ## Información General
 
-Esta preEntrega presenta el proyecto web completamente maquetado para versiones de móvil, tableta y escritorio. Se ha desarrollado siguiendo la metodología mobile-first y se han empleado los siguientes breakpoints: 768px y 1200px.
+Esta entrega presenta el proyecto final web completamente maquetado para versiones de móvil, tableta y escritorio. Se ha desarrollado siguiendo la metodología mobile-first y se han empleado los siguientes breakpoints: 768px y 1200px.
 
 El estilado se ha desarrollado completamente en SASS utilizando la sintaxis de SCSS. Se he intentado estructurar el estilado de forma que cada componente tenga su propia hoja de estilos.
 
@@ -21,3 +21,7 @@ Se han buscado utilizar HTML semántico en la mayor medida posible. Todas las im
 ## Estructura de la página
 
 Para plantear la estructura de la página he preferido emplear el sistema de grid propio de CSS (gridbox) así como flexbox para algunos componentes.
+
+## Publicación de la web
+
+Esta página web se ha publicado directamente en github pages: https://jsainzfc.github.io/PF-Sainz-de-la-Maza/
