@@ -421,7 +421,7 @@ main {
 .navBar__ssnn {
   gap: 30px;
 }
-.navBar__ssnn img {
+.navBar__ssnn li > a > img {
   width: 30px;
 }
 .navBar__button {
